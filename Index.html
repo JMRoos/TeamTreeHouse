@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Full Stack Wizard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/main.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+
+
+<div class="container text-center">
+    <h1 class="display-1">Full Stack Wizard</h1>
+    
+
+    <label for="basic-url">Enter your Teamtreehouse Username:</label>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon3">https://teamtreehouse.com/</span>
+      </div>
+      <input type="text" class="form-control username" id="username" placeholder="Enter your teamtreehouse accountname here" aria-describedby="basic-addon3">
+      <button type="button" class="btn btn-primary" onclick="getUserDataByName()">Go!</button>
+    </div>
+</div>    
+
+
+    
+ <div class="container text-center-fluid"   
+    <div id="treehousediv">
+        <table>
+            <tr>
+                <th colspan="2">  <h1 id="treehouse"></h1></th>
+            </tr>
+            <tr>
+                <th > <h2 id="username"></h2></th>
+                <th rowspan="3">
+                    <div id="myPoints">
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <canvas id="myCanvas" ></canvas>
+                </td>
+            </tr>
+            <tr>
+                <td id="profileinfo">
+                    <p id="profilename"> </p>
+                    <p id="url"> </p>
+                    <p id="badges">
+                    <h3 id="total"> </h3>
+                </td>
+            </tr>
+        </table>
+    
+    </div>   
+</div>
+<script type="text/javascript" src="js/testScript.js"></script>
+</body>
+</html>
